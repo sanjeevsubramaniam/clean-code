@@ -7,7 +7,7 @@ public class Shop {
      * Assume shop has inventory and an option for user to select the items
      * **/
 
-    public float checkOut(List<Item> cart){
+    public float checkout(List<Item> cart){
         float totalPrice = 0;
         for(Item item : cart){
             totalPrice += this.priceInclusiveOfTax(this.discount(item.getPrice(), item), item);
